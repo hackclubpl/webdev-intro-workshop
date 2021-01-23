@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "dependencies": {
+    "mdx-deck": "^4.1.1",
+    "@hackclubpl/mdx-deck-theme": "hackclubpl/mdx-deck-theme"
+  }
+}
