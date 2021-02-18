@@ -2,13 +2,54 @@ import hcTheme from '@hackclubpl/mdx-deck-theme'
 
 export const theme = hcTheme;
 
+import web_models_image from'./assets/web_models.jpg';
+import wordcloud_web_dev from'./assets/wordcloud_web_dev.svg';
+import history_web_dev from'./assets/history_web_dev.png';
 
-# Hello
+# Web-Development
+
+<img src={web_models_image}/>
+
 
 ---
 
-## This is my deck
+### ~~Definicja?~~
+
+###### Tworzenie i utrzymywanie aplikacji działających w przeglądarce
+
+<img src={wordcloud_web_dev}/>
 
 ---
 
-## The End
+## Co wyróżniamy?
+
+Myślałem, czy by tego nie zrobić w 4 kolumnach, na przykład.
+
+<details>
+    <summary>Fronted</summary>
+    Procesy; kod, który chodzi u osoby na przeglądarce.
+    W tym także wizualizowanie strony.
+</details>
+
+<details>
+    <summary>Backend & DB</summary>
+    "To czego nie widać"
+</details>
+
+<details>
+    <summary>UI & UX</summary>
+    Niech apka będzie tak dobrze odbierana, jak się tylko da
+</details>
+
+<details>
+    <summary>DevOps & Administracja</summary>
+    Dodatkowo - czyli jak ważne jest administrowanie stroną
+</details>
+
+---
+
+<img src={history_web_dev}/>
+
+---
+
+<embed type="text/html" src="https://trends.google.pl/trends/explore?date=all&q=frontend,backend"></embed>
