@@ -2,13 +2,175 @@ import hcTheme from '@hackclubpl/mdx-deck-theme'
 
 export const theme = hcTheme;
 
+import web_models_image from'./assets/web_models.jpg';
+import wordcloud_web_dev from'./assets/wordcloud_web_dev.svg';
+import history_web_dev from'./assets/history_web_dev.png';
+import trends_google from'./assets/trends_google.png';
+import fronted_vs_backend from'./assets/fronted_backend.png';
+import static_server from './assets/static_server.png';
+import dynamic_server from './assets/dynamic_server.png';
+import tcpip from './assets/warstwy_sieciowe.png';
+import httpprotocol from './assets/http.png';
 
-# Hello
+
+# Web-Development
+
+<img src={web_models_image}/>
+
 
 ---
 
-## This is my deck
+### ~~Definicja?~~
+
+###### Tworzenie i utrzymywanie aplikacji działających w przeglądarce
+
+<img src={wordcloud_web_dev}/>
 
 ---
 
-## The End
+## Co wyróżniamy?
+
+Myślałem, czy by tego nie zrobić w 4 kolumnach, na przykład.
+
+<details>
+    <summary>Fronted</summary>
+    Procesy; kod, który chodzi u osoby na przeglądarce.
+    W tym także wizualizowanie strony.
+</details>
+
+<details>
+    <summary>Backend & DB</summary>
+    "To czego nie widać"
+</details>
+
+<details>
+    <summary>UI & UX</summary>
+    Niech apka będzie tak dobrze odbierana, jak się tylko da
+</details>
+
+<details>
+    <summary>DevOps & Administracja</summary>
+    Dodatkowo - czyli jak ważne jest administrowanie stroną
+</details>
+
+---
+
+<img src={history_web_dev}/>
+
+---
+
+[Google Trends](https://trends.google.pl/trends/explore?date=all&q=frontend,backend)
+<img src={trends_google}/>
+
+---
+
+### Po co nam backend?
+
++ nasza strona to pliki - one muszą gdzieś być
++ Gdzieś przecież muszą być te wszystkie nasze dane, w tym nasze konta
+
+<img src={fronted_vs_backend}/>
+
+---
+
+### Co to server?
+
+<img src="https://images.unsplash.com/flagged/photo-1579274216947-86eaa4b00475?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb"/>
+<img src="https://images.unsplash.com/photo-1588405765997-02255aff295a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb"/>
+
+---
+
+### Konfiguracje i typy
+
+#### Konfiguracje
++ statyczna
++ dynamiczna 
++ prerendering
+Jest ich więcej, ale te są najczęściej stosowane
+
+#### typy
++ Serwer aplikacji
++ Serwer Bazy Danych
++ Serwer Webwy / Serwer https
+
+---
+
+### Statyczny
+
+<img src={static_server}/>
+
+--- 
+
+### Dynamiczny
+
+<img src={dynamic_server}/>
+
+---
+
+### Dalej o zaletach posiadania backendu
+
++ personalizacja strony
++ wysyłanie powiadomień
++ przetwarzanie wymagające dużej siły obliczeniowej
++ dostęp do bazy Danych
+
+---
+
+### O połączeniach - protokoły i API
+
+<img src="https://www.seobility.net/en/wiki/images/thumb/d/d2/HTTP-Header.png/450px-HTTP-Header.png"/>
+<img src="https://www.redhat.com/cms/managed-files/styles/wysiwyg_full_width/s3/API-page-graphic.png?itok=5zMemph9"/>
+
+---
+
+### API
+
+<img src="https://images.unsplash.com/photo-1610056494249-5d7f111cf78f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb"/>
+
+- gdzie/w jakim miejscu mogę o coś poprosić.
+- jakiego skutku mogę się spodziewać? Jakich danych i w jakim formacie?
+- jakich informacji muszę dostarczyć, żeby się komunikować?
+- *inne kwestie dotyczące jak ma przebiegać ta komunikacja*
+    - rutyny, protokoły, wszelkie dodatkowe informacje co trzeba zrobić.
+---
+
+```typescript
+addEfectToImages(image:object, effect:string): string;
+
+Wejście:
+    image - plik do zdjęcia lub URL, format png
+    effect - reverse, contrast, darken, brighten
+Wyjście:
+    plik ze zdjęciem, przekonwertowany.
+
+Jak uzyskać dostęp?
+Przez http - GET https://server1/addEfectToImage?image=url&effect=effect
+Przez pobranie paczki np. przez npm i import modułami ES6
+
+```
+
+---
+
+### Protokół
+
+<img src={tcpip}/>
+<img src={httpprotocol}/>
+
+---
+
+### HTTP
+
+```JS
+GET /user?age=45&hair=blonde
+POST PUT DELETE
+```
+
++ prosty
++ bezstanowy
++ np. caching obsługuje
+
+---
+
+### Stateless vs. Statefull
+### Cookie vs Session
+
