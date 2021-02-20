@@ -37,26 +37,10 @@ import stateimage from './assets/state-image.svg';
 
 Myślałem, czy by tego nie zrobić w 4 kolumnach, na przykład.
 
-<details>
-    <summary>Fronted</summary>
-    Procesy; kod, który chodzi u osoby na przeglądarce.
-    W tym także wizualizowanie strony.
-</details>
-
-<details>
-    <summary>Backend & DB</summary>
-    "To czego nie widać"
-</details>
-
-<details>
-    <summary>UI & UX</summary>
-    Niech apka będzie tak dobrze odbierana, jak się tylko da
-</details>
-
-<details>
-    <summary>DevOps & Administracja</summary>
-    Dodatkowo - czyli jak ważne jest administrowanie stroną
-</details>
++ Fronted
++ Backend & DB
++ UI & UX
++ DevOpS
 
 ---
 
@@ -74,13 +58,20 @@ Myślałem, czy by tego nie zrobić w 4 kolumnach, na przykład.
 + nasza strona to pliki - one muszą gdzieś być
 + Gdzieś przecież muszą być te wszystkie nasze dane, w tym nasze konta
 
+---
+
 <img src={fronted_vs_backend}/>
 
 ---
 
-### Co to server?
+### Co to serwer?
+
+---
 
 <img src="https://images.unsplash.com/flagged/photo-1579274216947-86eaa4b00475?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb"/>
+
+---
+
 <img src="https://images.unsplash.com/photo-1588405765997-02255aff295a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb"/>
 
 ---
@@ -124,13 +115,24 @@ Jest ich więcej, ale te są najczęściej stosowane
 ### O połączeniach - protokoły i API
 
 <img src="https://www.seobility.net/en/wiki/images/thumb/d/d2/HTTP-Header.png/450px-HTTP-Header.png"/>
+
+---
+
 <img src="https://www.redhat.com/cms/managed-files/styles/wysiwyg_full_width/s3/API-page-graphic.png?itok=5zMemph9"/>
 
 ---
 
-### API
+<img src="data:image/png;base64,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"/>
+
+---
+
+# API
+
+---
 
 <img src="https://images.unsplash.com/photo-1610056494249-5d7f111cf78f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb"/>
+
+---
 
 - gdzie/w jakim miejscu mogę o coś poprosić.
 - jakiego skutku mogę się spodziewać? Jakich danych i w jakim formacie?
@@ -141,7 +143,7 @@ Jest ich więcej, ale te są najczęściej stosowane
 
 ```typescript
 addEfectToImages(image:object, effect:string): string;
-
+```
 Wejście:
     image - plik do zdjęcia lub URL, format png
     effect - reverse, contrast, darken, brighten
@@ -152,13 +154,25 @@ Jak uzyskać dostęp?
 Przez http - GET https://server1/addEfectToImage?image=url&effect=effect
 Przez pobranie paczki np. przez npm i import modułami ES6
 
-```
+
+---
+
++ Pobieranie danych 
+ + Płatności
+ + Podróże 
 
 ---
 
 ### Protokół
 
 <img src={tcpip}/>
+
+---
+
+<img src="https://delante.pl/wp-content/uploads/2019/06/ftp-schemat-750x411.png"/>
+
+---
+
 <img src={httpprotocol}/>
 
 ---
@@ -196,14 +210,21 @@ POST PUT DELETE
 
 ---
 
-### UI i UX
+# UI i UX
+
+---
 
 <img src={uxui}/>
+
+---
+
 <img src="https://www.seobility.net/en/wiki/images/thumb/b/b7/User-Centered-Design.png/450px-User-Centered-Design.png"/>
 
 ---
 
-### UX
+## UX
+
+---
 
 <img src="https://www.productplan.com/uploads/2017/02/productplan-journey-map.png"/>
 
@@ -218,6 +239,8 @@ POST PUT DELETE
 
 # Trendy
 
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/414e3650-59e0-4d3a-8b2b-c9d466a2f6eb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210219%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210219T214410Z&X-Amz-Expires=86400&X-Amz-Signature=23c73057d68a3fc3c78e51f9c2e35a3b750474aef0ad938d7b5509fecf5c7493&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22"/>
+
 ---
 
 ##### Typowanie
@@ -226,16 +249,15 @@ POST PUT DELETE
 ##### Security
 ##### AI
 
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/414e3650-59e0-4d3a-8b2b-c9d466a2f6eb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210219%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210219T214410Z&X-Amz-Expires=86400&X-Amz-Signature=23c73057d68a3fc3c78e51f9c2e35a3b750474aef0ad938d7b5509fecf5c7493&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22"/>
+
 
 
 ---
 
 # Przyszłość rynku?
 
-<img src={statistics}/>
-
 ---
 
+<img src={statistics}/>
 
 
